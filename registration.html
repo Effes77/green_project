@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="modal">
+        <button class="modal__close" type="button">
+          <svg width="18px" height="18px">
+            <use href="img/close_button.svg"></use>
+          </svg>
+        </button>
+        <div class="modal__title">
+          <a>Login</a>
+          <svg class="modal__slash" width="5px" height="16px">
+            <use href="img/slash_icon.svg"></use>
+          </svg>
+          <a><span class="modal__reg">Register</span></a>
+        </div>
+        <div class="modal__text">
+          <p>Enter your email and password to register.</p>
+        </div>
+        <form class="form" action="#">
+          <div class="form__menu">
+            <label class="sr-only" for="username"> Username</label>
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Username"
+              id="username"
+            />
+            <label class="sr-only" for="email"> Enter your email address</label>
+            <input
+              class="form__input"
+              type="email"
+              placeholder="Enter your email address"
+              id="email"
+            />
+            <label class="sr-only" for="password"> Password</label>
+            <input
+              class="form__input"
+              type="password"
+              placeholder="Password"
+              id="password"
+            />
+            <label class="sr-only" for="confirm-password">
+              Confirm Password</label
+            >
+            <input
+              class="form__input"
+              type="password"
+              placeholder="Confirm Password"
+              id="confirm-password"
+            />
+          </div>
+        </form>
+        <button class="form__button" type="submit">Register</button>
+        <p class="modal__paragraph">Or register with</p>
+        <div class="modal__button-link">
+          <button class="modal__button-links" type="button">
+            <svg width="20px" height="20px">
+              <use href="img/google_icon.svg"></use>
+            </svg>
+            Continue with Google
+          </button>
+          <button class="modal__button-links" type="button">
+            <svg width="20px" height="20px">
+              <use href="img/facebook_icon.svg"></use>
+            </svg>
+            Continue with Facebook
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
