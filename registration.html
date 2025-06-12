@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -21,7 +22,7 @@
           </svg>
         </button>
         <div class="modal__title">
-          <a>Login</a>
+          <a class="modal__log">Login</a>
           <svg class="modal__slash" width="5px" height="16px">
             <use href="img/slash_icon.svg"></use>
           </svg>
@@ -53,9 +54,14 @@
               placeholder="Password"
               id="password"
             />
+            <button class="form__hide" type="button">
+              <svg width="20px" height="20px">
+                <use href="img/icon_hide.svg"></use>
+              </svg>
+            </button>
             <label class="sr-only" for="confirm-password">
-              Confirm Password</label
-            >
+              Confirm Password
+            </label>
             <input
               class="form__input"
               type="password"
