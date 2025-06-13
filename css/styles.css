@@ -1,10 +1,10 @@
 *, body {
     box-sizing: content-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
     margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
     line-height: 16px;
     background-color: black;
 }
@@ -20,6 +20,8 @@ p {
 
 button {
     cursor: pointer;
+    will-change: transform;
+    transform-origin: center center;
 }
 
 .homework__container {
@@ -42,7 +44,6 @@ button {
     font-weight: 700;
     color: #FFFFFF;
     transition: 0.5s;
-    cursor: pointer;
 }
 
 .homework__button:hover {
@@ -100,10 +101,27 @@ button {
     font-size: 20px;
 }
 
-.modal__reg {
-    color: #46A358;
+.modal__log {
+    transition: 0.5s;
 }
 
+.modal__log:hover {
+    font-size: 24px;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+}
+
+.modal__reg {
+    color: #46A358;
+    transition: 0.5s;
+}
+
+.modal__reg:hover {
+    font-size: 24px;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+}
+    
 .modal__slash {
     padding-left: 12px;
     padding-top: 3px;
@@ -143,10 +161,23 @@ button {
     border: 1px solid #EAEAEA;
     color:#19191C;
     padding-left: 14px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
 .form__input::placeholder {
     color: rgba(165, 165, 165, 1);
+}
+
+.form__hide {
+    position: absolute;
+    top: 266px;
+    left: 375px;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border: none;
 }
 
 .form__button {
@@ -155,7 +186,7 @@ button {
     background-color: #46A358;
     border: 2px solid #46A358;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 35px;
     font-size: 16px;
     font-weight: 700;
     color: #FFFFFF;
@@ -176,8 +207,22 @@ button {
 }
 
 .modal__paragraph {
+    display: flex;
+    align-items: center;
+    text-align: center;
     padding-top: 36px;
     padding-bottom: 27px;
+}
+
+.modal__paragraph::before,
+.modal__paragraph::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 1px;
+    background-color: #EAEAEA;
+    margin: 0 7px;
 }
 
 .modal__button-link {
@@ -203,6 +248,8 @@ button {
 .modal__button-links:hover {
     transition: 0.5s;
     transform: scale(1.1);
+    border: 1px solid #19191C;
+    color: #19191C;
 }
 
 .modal__button-links:active {
@@ -210,4 +257,5 @@ button {
     background-color: #46A358;
     color: #EAEAEA;
     transform: scale(1.1);
+    border: 1px solid #46A358;
 }
