@@ -4,14 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="homework__container">
-      <a href="./registration.html" class="homework__button" id="open-link"
-        >Go to homework</a
+    <header class="header container">
+      <strong class="header__logo" href="index.html">
+        <img src="img/greenshop_logo.svg" alt="greenshop logo" />
+      </strong>
+      <nav class="header__menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Plant Care</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </nav>
+      <a href="./registration.html" class="header__button" id="open-link">
+        <img src="img/login_button.svg" alt="login icon" />Login</a
       >
-    </div>
+    </header>
+    <main>
+      <section class="intro-section container">
+        <div class="intro-section__content">
+          <p>Welcome to GreenShop</p>
+          <h1 class="intro-section__title">
+            Let’s Make a Better
+            <span>Planet</span>
+          </h1>
+          <p class="intro-section__text">
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants. Use our plants to create an unique Urban Jungle.
+            Order your favorite plants!
+          </p>
+          <a class="intro-section__link" href="#">SHOP NOW</a>
+        </div>
+        <div class="intro-section__image">
+          <img src="img/intro-section_plant_image.png" alt="plant in a pot" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

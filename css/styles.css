@@ -1,21 +1,26 @@
 *, body {
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
 }
 
 body {
     margin: 0 auto;
-    line-height: 16px;
-    background-color: black;
+    background-color: #FFFFFF;
 }
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 p {
     font-size: 13px;
     margin: 0;
+}
+
+li {
+    list-style: none;
 }
 
 button {
@@ -24,38 +29,126 @@ button {
     transform-origin: center center;
 }
 
-.homework__container {
-    display: flex;
-    justify-content: center;
+svg {
+    margin: 0;
 }
 
-.homework__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* index styles */
+
+.container {
+    margin: 0 120px;
+}
+
+/* Header-setion */
+
+.header {
+    font-size: 0;
+    margin-top: 30px;
+}
+
+.header__logo {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header__menu {
+    display: inline-block;
+    width: calc(100% - 250px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header__menu li {
+    display: inline-block;
+}
+
+.header__button {
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
-    width: 300px;
-    height: 45px;
+    width: 100px;
+    height: 35px;
     background-color: #46A358;
     border: none;
     border-radius: 5px;
-    margin-top: 60px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     color: #FFFFFF;
-    transition: 0.5s;
+    line-height: 100%;
+    vertical-align: middle;
 }
 
-.homework__button:hover {
+
+/* Intro-section */
+
+.intro-section {
+    font-size: 0;
+}
+
+.intro-section__content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10%;
+    padding-left: 40px;
+}
+
+.intro-section__title {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.intro-section__title span{
+    color: #46A358;
+}
+
+.intro-section__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+}
+
+
+.intro-section__link {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #46A358;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.intro-section__image {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .homework__button:hover {
     background-color: #388e3c;
     transition: 0.5s;
     transform: scale(1.2);
-}
-
+} */
+/* 
 .homework__button:active {
     background-color: #FFFFFF;
     color: #19191C;
-}
+} */
+
+/* Registration styles */
+
+/* Modal-section */
 
 .modal {
     position: relative;
@@ -67,7 +160,8 @@ button {
     flex-direction: column;
     margin-top: 100px;
     background-color: #FFFFFF;
-    border: none;
+    border: 2px solid black;
+    border-radius: 10px;    
     border-bottom: 10px solid #46A358;
 }
 
@@ -77,8 +171,8 @@ button {
     background-color: transparent;
     height: 18px;
     width: 18px;
-    top: 13px;
-    right: 13px;
+    top: 15px;
+    right: 20px;
     border: none;
     transition: 0.5s;
 }
@@ -134,7 +228,8 @@ button {
     height: 16px;
     width: 100%;
     text-align: left;
-    padding-left: 180px;
+    padding-left: 100px;
+    margin-bottom: 15px;
 }
 
 .form__menu {
@@ -172,8 +267,8 @@ button {
 
 .form__hide {
     position: absolute;
-    top: 266px;
-    left: 375px;
+    top: 255px;
+    left: 365px;
     background-color: transparent;
     height: 20px;
     width: 20px;
