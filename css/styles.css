@@ -50,6 +50,7 @@ svg {
     width: 150px;
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .header__menu {
@@ -64,8 +65,22 @@ svg {
 
 .header__menu li {
     display: inline-block;
+    padding-right: 50px;
 }
 
+.header__menu a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3D3D3D;
+}
+
+.header__menu a:hover {
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+    
 .header__button {
     display: inline-block;
     text-align: center;
@@ -80,6 +95,16 @@ svg {
     color: #FFFFFF;
     line-height: 100%;
     vertical-align: middle;
+    align-content: center;
+}
+
+.header__button span {
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.header__login-image {
+    vertical-align: middle;
 }
 
 
@@ -87,6 +112,7 @@ svg {
 
 .intro-section {
     font-size: 0;
+    margin-top: 12px;
 }
 
 .intro-section__content {
@@ -97,12 +123,22 @@ svg {
     padding-left: 40px;
 }
 
+.intro-section__welcome {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #3D3D3D;
+    margin-bottom: 7px;
+}
+
 .intro-section__title {
     font-weight: 900;
     font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
     margin: 0;
+    margin-bottom: 5px;
 }
 
 .intro-section__title span{
@@ -114,8 +150,8 @@ svg {
     font-size: 14px;
     line-height: 24px;
     color: #727272;
+    margin-bottom: 44px;
 }
-
 
 .intro-section__link {
     display: inline-block;
@@ -127,6 +163,8 @@ svg {
     background-color: #46A358;
     text-align: center;
     color: #FFFFFF;
+    border-radius: 6px;
+    align-content: center;
 }
 
 .intro-section__image {
@@ -134,6 +172,8 @@ svg {
     display: inline-block;
     vertical-align: middle;
 }
+
+/* Еще не учили) */
 
 /* .homework__button:hover {
     background-color: #388e3c;
@@ -145,6 +185,7 @@ svg {
     background-color: #FFFFFF;
     color: #19191C;
 } */
+
 
 /* Registration styles */
 
@@ -267,7 +308,7 @@ svg {
 
 .form__hide {
     position: absolute;
-    top: 255px;
+    top: 262px;
     left: 365px;
     background-color: transparent;
     height: 20px;
@@ -345,6 +386,7 @@ svg {
     transform: scale(1.1);
     border: 1px solid #19191C;
     color: #19191C;
+    font-weight: 600;
 }
 
 .modal__button-links:active {
@@ -353,4 +395,5 @@ svg {
     color: #EAEAEA;
     transform: scale(1.1);
     border: 1px solid #46A358;
+    font-weight: 600;
 }
