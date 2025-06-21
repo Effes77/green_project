@@ -153,27 +153,22 @@ svg {
 .header__menu {
     display: inline-block;
     width: calc(100% - 250px);
-    font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     text-align: center;
     vertical-align: middle;
 }
 
-.active {
+.header__menu .active  {
     font-weight: 700;
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 25px;
 }
 
 .header__list {
     display: inline-block;
     padding-right: 50px;
     transition: 0.5s;
-}
-
-.header__list.active a {
-    font-weight: 700;
-    border-bottom: 3px solid #46A358;
-    padding-bottom: 25px;
 }
 
 .header__link {
@@ -212,7 +207,7 @@ svg {
 .intro-section {
     font-size: 0;
     margin-top: 12px;
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: #F5F5F580;
 }
 
 .intro-section__content {
@@ -269,6 +264,178 @@ svg {
     display: inline-block;
     vertical-align: middle;
 }
+
+/* Product-section */
+
+.product-section {
+    background-color: #F5F5F580;
+    margin-top: 100px;
+    font-size: 0;
+}
+
+.product-section__filter-bar {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+}
+
+.product-section__categories{
+    display: inline-block;
+    padding-top: 10px;
+    float: left;
+    font-size: 15px;
+}
+
+.product-section__title {
+    margin: 0;
+}
+
+.product-section__categories-list {
+    display: inline-block;
+    padding: 0;
+    padding-left: 12px;
+    height: 774px;
+}
+
+.product-section__categories-list a {
+    color: inherit;
+}
+
+.product-section__categories-list .active {
+    color: #46A358;
+    font-weight: 700;
+}
+
+.product-section__categories-list li {
+    padding: 20px 180px 0 0;
+    transition: transform .3s ease;
+}
+
+.product-section__categories-list li:not(.active):hover {
+    transform: scale(1.2);
+}
+
+.product-section__sales {
+    display: inline-block;
+    height: 370px;
+    width: 470px;
+    float: left;
+    margin: -546px -70px;
+}
+
+.product-section__sales-super {
+    display: inline-block;
+    padding-right: 38px;
+    margin-left: 50px;
+}
+
+.product-section__sales-title {
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 700;
+    padding-right: 38px;
+    margin-left: 100px;
+    vertical-align: text-top;
+    color: #3D3D3D
+}
+
+.product-section__sorting {
+    display: inline-block;
+    vertical-align: baseline;
+    padding-left: 50px;
+    padding-right: 300px;
+}
+
+.product-section__sorting-list {
+    margin: 0;
+    padding: 0;
+}
+
+.product-section__sorting-list a {
+    color: inherit;
+}
+
+.product-section__sorting-item.active {
+    color:#46A358;
+    font-weight: 700;
+    border-bottom: 2px solid #46A358;
+}
+
+.product-section__sorting-item {
+    display: inline-block;
+    padding-right: 40px;
+    font-size: 15px;
+    color:#3D3D3D;
+    transition: transform 0.3s ease;
+}
+
+.product-section__sorting-item:not(.active):hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.product-section__options {
+    display: inline-block;
+}
+
+.product-section__select {
+    border: none;
+}
+
+.product-section__card {
+    display: inline-block;
+    margin-top: 33px;
+    width: 258px;
+    height: 350px;
+    margin-right: 33px;
+}
+
+.product-section__plant-name {
+    font-size: 16px;
+}
+
+.product-section__product-price {
+    color: #46A358;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-section__pagination {
+    font-size: 18px;
+    text-align: right; /* выравнивание содержимого по правому краю */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.product-section__pagination li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #E5E5E5;
+    font-weight: 300;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.product-section__pagination a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: sub;
+    color: #3D3D3D;
+}
+
+.product-section__pagination li:hover {
+    background-color: #46A358;
+}
+
+.product-section__pagination a:hover {
+    color: #E5E5E5;
+    font-weight: 700;
+}
+
 
 /* Registration styles */
 

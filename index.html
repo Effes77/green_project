@@ -57,31 +57,56 @@
       </section>
       <section class="product-section container">
         <div class="product-section__categories">
-          <p><strong>Categories</strong></p>
-          <ul>
-            <li><a href="#">House Plants</a></li>
-            <li><a href="#">Potter Plants</a></li>
-            <li><a href="#">Seeds</a></li>
-            <li><a href="#">Small Plants</a></li>
-            <li><a href="#">Big Plants</a></li>
-            <li><a href="#">Succulents</a></li>
-            <li><a href="#">Trerrariums</a></li>
-            <li><a href="#">Gardening</a></li>
-            <li><a href="#">Accessories</a></li>
+          <h3 class="product-section__title">Categories</h3>
+          <ul class="product-section__categories-list">
+            <li class="active">
+              <a href="#">House Plants</a>
+            </li>
+            <li>
+              <a href="#">Potter Plants</a>
+            </li>
+            <li>
+              <a href="#">Seeds</a>
+            </li>
+            <li>
+              <a href="#">Small Plants</a>
+            </li>
+            <li>
+              <a href="#">Big Plants</a>
+            </li>
+            <li>
+              <a href="#">Succulents</a>
+            </li>
+            <li>
+              <a href="#">Trerrariums</a>
+            </li>
+            <li>
+              <a href="#">Gardening</a>
+            </li>
+            <li>
+              <a href="#">Accessories</a>
+            </li>
           </ul>
         </div>
-        <div class="product-section__options">
-          <div>
-            <ul>
-              <li><a href="#">All Plants</a></li>
-              <li><a href="#">New Arrivals</a></li>
-              <li><a href="#">Sale</a></li>
+
+        <div class="product-section__filter-bar">
+          <div class="product-section__sorting">
+            <ul class="product-section__sorting-list">
+              <li class="active product-section__sorting-item">
+                <a href="#">All Plants</a>
+              </li>
+              <li class="product-section__sorting-item">
+                <a href="#">New Arrivals</a>
+              </li>
+              <li class="product-section__sorting-item">
+                <a href="#">Sale</a>
+              </li>
             </ul>
           </div>
-          <div>
-            <form action="">
-              <label for="">Short by:</label>
-              <select name="#" id="#">
+          <div class="product-section__options">
+            <form action="#">
+              <label for="#">Short by:</label>
+              <select class="product-section__select" name="#" id="#">
                 <option value="#">Default sorting</option>
               </select>
             </form>
@@ -89,15 +114,116 @@
         </div>
         <div class="product-section__goods">
           <ul>
-            <li><article></article></li>
-            <li><article></article></li>
-            <li><article></article></li>
-            <li><article></article></li>
-            <li><article></article></li>
-            <li><article></article></li>
-            <li><article></article></li>
-            <li><article></article></li>
-            <li><article></article></li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/barberton_daisy_plant_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__product-name">Barberton Daisy</p>
+                <p class="product-section__product-price">$119.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/angel_wing_begonia_plant_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__product-name">Angel Wing Begonia</p>
+                <p class="product-section__product-price">$169.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/african_violet_plant_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__plant-name">African Violet</p>
+                <p class="product-section__product-price">$199.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/beach_spider_lily_plant_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__plant-name">Beach Spider Lily</p>
+                <p class="product-section__product-price">$129.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/blushing_bromeliadplant_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__plant-name">Blushing Bromeliad</p>
+                <p class="product-section__product-price">$139.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/aluminum_plant_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__plant-name">Aluminum Plant</p>
+                <p class="product-section__product-price">$179.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/bird's_nest_nern_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__plant-name">Bird's Nest Fern</p>
+                <p class="product-section__product-price">$99.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/broadleaf_lady_palm_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__plant-name">Broadleaf Lady Palm</p>
+                <p class="product-section__product-price">$59.00</p>
+              </article>
+            </li>
+            <li class="product-section__card">
+              <article>
+                <img
+                  src="img/chinese_evergreen_image.png"
+                  alt="barberton_daisy_plant"
+                />
+                <p class="product-section__plant-name">Chinese Evergreen</p>
+                <p class="product-section__product-price">$39.00</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="product-section__sales">
+          <a href="#">
+            <img
+              class="product-section__sales-super"
+              src="img/super_sale_title.png"
+              alt="super sale"
+            />
+            <p class="product-section__sales-title">UP TO 75% OFF</p>
+            <img src="img/sales_banner_image.png" alt="plant" />
+          </a>
+        </div>
+        <div>
+          <ul class="product-section__pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
           </ul>
         </div>
       </section>
