@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -23,10 +17,8 @@
         </button>
         <div class="modal__title">
           <a class="modal__log">Login</a>
-          <svg class="modal__slash" width="5px" height="16px">
-            <use href="img/slash_icon.svg"></use>
-          </svg>
-          <a><span class="modal__reg">Register</span></a>
+          <span class="modal__divider"></span>
+          <a class="modal__reg">Register</a>
         </div>
         <div class="modal__text">
           <p>Enter your email and password to register.</p>
@@ -70,7 +62,7 @@
             />
           </div>
         </form>
-        <button class="form__button" type="submit">Register</button>
+        <a class="form__button btn" type="submit">Register</a>
         <p class="modal__paragraph">Or register with</p>
         <div class="modal__button-link">
           <button class="modal__button-links" type="button">
