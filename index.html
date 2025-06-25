@@ -12,8 +12,8 @@
       <a class="header__logo" href="index.html">
         <img src="img/greenshop_logo.svg" alt="greenshop logo" />
       </a>
-      <nav class="header__menu">
-        <ul>
+      <nav>
+        <ul class="header__menu">
           <li class="header__list active">
             <a class="header__link" href="#">Home</a>
           </li>
@@ -90,14 +90,12 @@
             </ul>
           </div>
           <div class="product-section__sales">
-            <a href="#">
+            <a href="#" target="_blank">
               <img
-                class="product-section__sales-super"
-                src="img/super_sale_title.png"
+                class="product-section__baner"
+                src="img/super_sale_banner.png"
                 alt="super sale"
               />
-              <p class="product-section__sales-title">UP TO 75% OFF</p>
-              <img src="img/sales_banner_image.png" alt="plant" />
             </a>
           </div>
         </div>
@@ -105,7 +103,7 @@
           <div class="product-section__filter-bar">
             <div class="product-section__sorting">
               <ul class="product-section__sorting-list">
-                <li class="active product-section__sorting-item">
+                <li class="product-section__sorting-item active">
                   <a href="#">All Plants</a>
                 </li>
                 <li class="product-section__sorting-item">
@@ -125,89 +123,91 @@
               </form>
             </div>
           </div>
-          <div class="product-section__goods">
-            <ul>
-              <li class="product-section__card">
-                <img
-                  src="img/barberton_daisy_plant_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__product-name">Barberton Daisy</p>
-                <p class="product-section__product-price">$119.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/angel_wing_begonia_plant_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__product-name">Angel Wing Begonia</p>
-                <p class="product-section__product-price">$169.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/african_violet_plant_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__plant-name">African Violet</p>
-                <p class="product-section__product-price">$199.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/beach_spider_lily_plant_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__plant-name">Beach Spider Lily</p>
-                <p class="product-section__product-price">$129.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/blushing_bromeliadplant_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__plant-name">Blushing Bromeliad</p>
-                <p class="product-section__product-price">$139.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/aluminum_plant_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__plant-name">Aluminum Plant</p>
-                <p class="product-section__product-price">$179.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/bird's_nest_nern_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__plant-name">Bird's Nest Fern</p>
-                <p class="product-section__product-price">$99.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/broadleaf_lady_palm_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__plant-name">Broadleaf Lady Palm</p>
-                <p class="product-section__product-price">$59.00</p>
-              </li>
-              <li class="product-section__card">
-                <img
-                  src="img/chinese_evergreen_image.png"
-                  alt="barberton_daisy_plant"
-                />
-                <p class="product-section__plant-name">Chinese Evergreen</p>
-                <p class="product-section__product-price">$39.00</p>
-              </li>
-            </ul>
-          </div>
-          <div class="product-section__pagination">
-            <ul>
+          <ul class="product-section__goods">
+            <li class="product-section__card">
+              <img
+                src="img/barberton_daisy_plant_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Barberton Daisy</p>
+              <p class="product-section__product-price">$119.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/angel_wing_begonia_plant_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Angel Wing Begonia</p>
+              <p class="product-section__product-price">$169.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/african_violet_plant_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">African Violet</p>
+              <p class="product-section__product-price">$199.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/beach_spider_lily_plant_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Beach Spider Lily</p>
+              <p class="product-section__product-price">$129.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/blushing_bromeliadplant_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Blushing Bromeliad</p>
+              <p class="product-section__product-price">$139.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/aluminum_plant_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Aluminum Plant</p>
+              <p class="product-section__product-price">$179.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/bird's_nest_nern_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Bird's Nest Fern</p>
+              <p class="product-section__product-price">$99.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/broadleaf_lady_palm_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Broadleaf Lady Palm</p>
+              <p class="product-section__product-price">$59.00</p>
+            </li>
+            <li class="product-section__card">
+              <img
+                src="img/chinese_evergreen_image.png"
+                alt="barberton_daisy_plant"
+              />
+              <p class="product-section__product-name">Chinese Evergreen</p>
+              <p class="product-section__product-price">$39.00</p>
+            </li>
+          </ul>
+          <div>
+            <ul class="product-section__pagination">
               <li class="active"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
               <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+              <li>
+                <a href="#"
+                  ><img src="img/arrow_right.svg" alt="arrow right"
+                /></a>
+              </li>
             </ul>
           </div>
         </div>
