@@ -424,6 +424,7 @@ svg {
     margin-top: 94px;
     gap: 28px;
     margin-bottom: 138px;
+    background-color: #FBFBFB;
 }
 
 .shop-link-section__left{
@@ -476,13 +477,12 @@ svg {
 
 .blog-section {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .blog-section__title {
     font-size: 30px;
-    line-height: 16px;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 .blog-section__text {
@@ -497,8 +497,24 @@ svg {
     text-align: start;
 }
 
+.blog-section__list li {
+    width: 25%;
+}
+
+.blog-section__list li img {
+    margin-bottom: 9px;
+}
+
+.blog-section__card {
+    padding-left: 12px;
+    padding-right: 11px;
+}
+
+.limitation {
+    max-width: 190px;
+}
+
 .blog-section__time {
-    margin-top: 9px;
     font-weight: 500;
     color: #46A358;
     line-height: 16px;
@@ -519,9 +535,6 @@ svg {
 .blog-section__card-link {
     font-weight: 500;
     color: #3D3D3D;
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
     position: relative;
     transition: 0.5s;
 }
