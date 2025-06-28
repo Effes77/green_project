@@ -259,7 +259,6 @@ svg {
 /* Product-section */
 
 .product-section {
-    background-color: #F5F5F580;
     margin-top: 100px;
     display: flex;
 }
@@ -267,8 +266,9 @@ svg {
 .product-section__left {
     flex-direction: column;
     display: flex;
-    padding-bottom: 140px;
-    padding-right: 50px;
+    margin-bottom: 140px;
+    margin-right: 50px;
+    background-color: #F5F5F580;
 }
 
 .product-section__categories{
@@ -278,11 +278,13 @@ svg {
 
 .product-section__title {
     margin: 0;
+    padding-top: 14px;
+    padding-left: 18px;
 }
 
 .product-section__categories-list {
     padding: 0;
-    padding-left: 12px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -354,6 +356,7 @@ svg {
     flex-wrap: wrap;
     gap: 30px;
     margin-right: -30px;
+    margin-top: 30px;
 }
 
 .product-section__card {
@@ -361,13 +364,17 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-top: 20px;
     border: 2px solid transparent;
+}
+
+.product-section__card > img {
+    background-color: #F5F5F580;
+    padding-bottom: 30px;
 }
 
 .product-section__product-name {
     font-size: 16px;
-    padding-top: 50px;
+    padding-top: 15px;
 }
 
 .product-section__product-price {
@@ -412,15 +419,26 @@ svg {
 
 .product-section__moore {
     display: none;
+    gap: 25px;
+    position: absolute;
+    bottom: 20%;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.product-section__moore a{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 4px;
+    background-color: #FFFFFF;
 }
 
 .product-section__card:hover .product-section__moore {
     display: flex;
-    gap: 25px;
-    position: absolute;
-    top: 280px;
-    left: 67px;
-    transition: 0.5s;
 }
 
 .product-section__card:hover .product-section__moore img:hover{
@@ -430,9 +448,7 @@ svg {
 
 .product-section__card:hover {
     border-top: 2px solid #46A358;
-    transition: 0.5s;
 }
-
 
 .product-section__pagination {
     margin-top: 90px;
@@ -484,17 +500,18 @@ svg {
     margin-top: 94px;
     gap: 28px;
     margin-bottom: 138px;
-    background-color: #FBFBFB;
 }
 
 .shop-link-section__left{
     display: flex;
     background-color: #FBFBFB;
+    padding-right: 30px;
 }
 
 .shop-link-section__right{
     display: flex;
     background-color: #FBFBFB;
+    padding-right: 35px;
 }
 
 .shop-link-section__text {
@@ -566,6 +583,9 @@ svg {
 .blog-section__card {
     padding-left: 12px;
     padding-right: 11px;
+    background-color: #FBFBFB;
+    padding-bottom: 15px;
+    padding: 9px 11px 15px 12px;
 }
 
 .limitation {
@@ -573,7 +593,6 @@ svg {
 }
 
 .blog-section__time {
-    margin-top: 9px;
     display: block;
     font-weight: 500;
     color: #46A358;
