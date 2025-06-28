@@ -361,11 +361,13 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    padding-top: 20px;
+    border: 2px solid transparent;
 }
 
 .product-section__product-name {
     font-size: 16px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .product-section__product-price {
@@ -373,6 +375,64 @@ svg {
     font-weight: 700;
     font-size: 18px;
 }
+
+.product-section__goods > li:has(span) {
+    position: relative;
+}
+
+.product-section__discount {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 80px;
+    height: 29px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #46A358;
+    text-align: center;
+    align-content: center;
+}
+
+.product-section__prices{
+    display: flex;
+    gap: 16px;
+}
+
+.product-section__sale-price {
+    color: #CBCBCB;
+    font-size: 18px;
+    text-decoration:line-through;
+}
+
+.product-section__goods > li:has(.product-section__moore){
+    position: relative;
+    transition: 0.5s;
+}
+
+.product-section__moore {
+    display: none;
+}
+
+.product-section__card:hover .product-section__moore {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: 280px;
+    left: 67px;
+    transition: 0.5s;
+}
+
+.product-section__card:hover .product-section__moore img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.product-section__card:hover {
+    border-top: 2px solid #46A358;
+    transition: 0.5s;
+}
+
 
 .product-section__pagination {
     margin-top: 90px;
@@ -429,10 +489,12 @@ svg {
 
 .shop-link-section__left{
     display: flex;
+    background-color: #FBFBFB;
 }
 
 .shop-link-section__right{
     display: flex;
+    background-color: #FBFBFB;
 }
 
 .shop-link-section__text {
@@ -501,10 +563,6 @@ svg {
     width: 25%;
 }
 
-.blog-section__list li img {
-    margin-bottom: 9px;
-}
-
 .blog-section__card {
     padding-left: 12px;
     padding-right: 11px;
@@ -515,6 +573,8 @@ svg {
 }
 
 .blog-section__time {
+    margin-top: 9px;
+    display: block;
     font-weight: 500;
     color: #46A358;
     line-height: 16px;
