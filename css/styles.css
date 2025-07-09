@@ -757,26 +757,23 @@ svg {
     margin: 0;
     padding: 0;
     gap: 40px;
-    position: relative;
-
 }
 
 .footer__cactus-list h3 {
     font-size: 17px;
-    padding-top: 110px;
     padding-bottom: 10px;
     margin: 0;
 }
 
 .footer__cactus-list p {
-    font-size: 14px;
     line-height: 22px;
 }
 
 .footer__cactus-list li {
     position: relative;
-    width: 28%;
+    width: calc(33.33% - 40px);
     padding: 5px 15px 5px 0;
+    padding-top: 110px;
 }
 
 
@@ -803,7 +800,7 @@ svg {
 }
 
 .footer__form {
-    width: 354px;
+    max-width: 354px;
 }
 
 .footer__form h3 {
@@ -878,18 +875,11 @@ svg {
     padding-top: 33px;
     padding-bottom: 29px;
     color: #3D3D3D;
+    gap: 5px;
 }
 
 .footer__account-list {
-    padding-right:  15%;
-}
-
-.footer__help-list {
-    padding-right:  11%;
-}
-
-.footer__categories-list {
-    padding-right: 15%;
+    width: 22%;
 }
 
 .footer__nav-title {
@@ -920,11 +910,6 @@ svg {
 .footer__nav-list li:hover {
     transform: scale(1.2);
     transition: 0.5s;
-}
-
-.footer__moore {
-    display: flex;
-    flex-direction: column;
 }
 
 .footer__icons-title {
